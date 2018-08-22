@@ -29,7 +29,7 @@ $color-main: #9a7058; // Основной фирменный цвет
 $color-border: #666; // Основной цвет границ таблиц, секций
 $color-bg-main: #9a7058;
 $color-bg-second: #292d30;
-$color-bg-second_transparent: rgba(41, 45, 48, 0);
+$color-bg-second_transparent: rgba($color-bg-second, 0);
 $color-gradient-start: #bc8d72;
 
 // ##########
