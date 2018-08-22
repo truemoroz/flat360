@@ -4,11 +4,12 @@
   border: 1px solid $color-border;
   width: 100%;
   box-sizing: border-box;
-  font-size: 14px;
-  line-height: 1;
   border-radius: 0;
   min-height: 0;
   background-color: white;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: (42/36);
 }
 
 .inputbox {

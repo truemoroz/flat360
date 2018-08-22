@@ -42,25 +42,11 @@
   font-weight: 600;
 }
 
-.text-title {
-  @include text-title;
-}
-
 @mixin text-subtitle {
   font-size: 30px;
   line-height: (36/30);
   font-weight: 600;
 }
-
-.text-subtitle {
-  @include text-subtitle;
-}
-
-//@mixin text-xl {
-//  font-size: 24px;
-//  font-weight: 600;
-//  line-height: 1;
-//}
 
 @mixin text-xl {
   font-size: 24px;
@@ -68,18 +54,10 @@
   line-height: 1;
 }
 
-.text-xl {
-  @include text-xl;
-}
-
 @mixin text-l {
   font-size: 18px;
   font-weight: 600;
   line-height: (28/18);
-}
-
-.text-l {
-  @include text-l;
 }
 
 @mixin text {
@@ -94,18 +72,10 @@
   line-height: (24/16);
 }
 
-.text-md {
-  @include text-md;
-}
-
 @mixin text-sm {
   font-size: 14px;
   font-weight: 600;
   line-height: (24/14);
-}
-
-.text-sm {
-  @include text-sm;
 }
 
 @mixin text-small {
@@ -120,14 +90,31 @@
   line-height: (27/10);
 }
 
+.text-title {
+  @include text-title;
+}
+
+.text-subtitle {
+  @include text-subtitle;
+}
+
+.text-xl {
+  @include text-xl;
+}
+
+.text-l {
+  @include text-l;
+}
+
+.text-md {
+  @include text-md;
+}
+
+.text-sm {
+  @include text-sm;
+}
+
 .text-xs {
   @include text-xs;
 }
-
-@mixin text-input {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: (42/36);
-}
-
 
