@@ -11,11 +11,11 @@ $grid-gap: 20px; // Расстояние между колонками
 $grid-gap-vertical: 20px; // Расстояние между строками в сетке
 $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной колонки
 $breakpoints: (
-  //'xl': 1920px,
+  'xl': 1366px,
   'lg': 1366px,
-  //'md': 1024px,
+  'md': 768px,
   'sm': 768px,
-  //'xs': 480px
+  'xs': 768px
 );
 
 // ##########
@@ -29,6 +29,7 @@ $color-main: #9a7058; // Основной фирменный цвет
 $color-border: #666; // Основной цвет границ таблиц, секций
 $color-bg-main: #9a7058;
 $color-bg-second: #292d30;
+$color-bg-second_transparent: rgba(41, 45, 48, 0);
 $color-gradient-start: #bc8d72;
 
 // ##########
