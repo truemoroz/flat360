@@ -19,19 +19,12 @@ gulp.task('ghpages', ghpages);
 gulp.task('images', images);
 gulp.task('icons', icons);
 gulp.task('styles', styles.build);
+gulp.task('lint', styles.lint);
 gulp.task('templates', templates);
 gulp.task('copymain', copymain);
 gulp.task('server', server);
 gulp.task('watch', watch);
 
-gulp.task('build', gulp.series(
-  'clean',
-  gulp.parallel('styles', 'scripts', 'copymain', 'images', 'icons', 'templates', 'copy'),
-));
-
-gulp.task('default', gulp.series(
-  'build',
-  gulp.parallel('watch', 'scripts:watch', 'server'),
-));
-
+gulp.task('build', gulp.series('clean', gulp.parallel('styles', 'lint', 'scripts', 'copymain', 'images', 'icons', 'templates', 'copy')));
+gulp.task('default', gulp.series('build', gulp.parallel('watch', 'scripts:watch', 'server')));
 gulp.task('deploy', gulp.series('build', 'ghpages'));
