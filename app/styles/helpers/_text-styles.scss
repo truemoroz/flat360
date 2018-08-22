@@ -90,12 +90,6 @@
   line-height: (27/10);
 }
 
-@mixin text-input {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: (42/36);
-}
-
 .text-title {
   @include text-title;
 }
@@ -123,3 +117,4 @@
 .text-xs {
   @include text-xs;
 }
+
