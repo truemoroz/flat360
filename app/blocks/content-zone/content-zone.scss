@@ -69,6 +69,10 @@
     @include text;
   }
 
+  //.text-xl {
+  //  @include text-xl;
+  //}
+
   blockquote {
     margin: 0;
     padding-left: 40px;
@@ -103,11 +107,19 @@
     }
   }
 
-  ul, ol { @include list; }
+  ul, ol {
+    @include list;
+  }
 
-  ul { @include ullist; }
+  ul {
+    @include ullist;
+  }
 
-  ol { @include ollist; }
+  ol {
+    @include ollist;
+  }
 
-  a { @include link; }
+  a {
+    @include link;
+  }
 }
