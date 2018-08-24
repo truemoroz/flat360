@@ -106,6 +106,10 @@
   @include text-l;
 }
 
+.text {
+  @include text;
+}
+
 .text-md {
   @include text-md;
 }

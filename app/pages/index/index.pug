@@ -1,7 +1,28 @@
 extends ../../layouts/default
-
+include ../../blocks/button/button
 block head
-  - var pageTitle = 'Versta Project Template'
+  - var pageTitle = 'flat 360'
 
 block content
-  +b.index
+  //+b.index
+
+  +main-section
+  //section.main-section
+  //  +b.HEADER.header
+  //    div.container
+  //      +e.logo
+  //        //+e.IMG.logo-img
+  //        +e('a')(href='#').link
+  //          +icon('logo').icon.__type_logo
+  //          //+icon('star', true).icon.__type_star
+  //
+  //      +e.tel.text-xl 8 800 550 94 22
+  //      +e.buttons
+  //        button().buttons__catalog.text Каталог
+  //          +icon('arrow').icon.__type_arrow
+  //        button().buttons__lead.text Оставить заявку
+  //  div.main-section__content
+  //    div.container
+  //      +b.main
+  //        +e.H1.title. Поможем продать недвижимость бизнес- класса в Крыму
+  //        +e.subtitle База эксклюзивной недвижимости
