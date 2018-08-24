@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Versta Project Template</title>
+    <title>flat 360</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -14,7 +14,63 @@
 </head>
 
 <body>
-    <div class="index"></div>
+    <!--+b.index-->
+    <div class="main-section">
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <!--+e.IMG.logo-img-->
+                    <a class="header__link" href="#">
+                        <!--+e('svg')(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")&attributes(attributes)-->
+                        <svg class="header__icon header__type header__type_logo"><use xlink:href="assets/images/icon.svg#icon_logo"></use></svg>
+                        <!--+icon('star', true).icon.__type_star-->
+                    </a>
+                </div>
+                <div class="header__tel text-xl">8 800 550 94 22</div>
+                <div class="header__buttons">
+                    <button class="buttons__catalog text">Каталог
+                        <!--+e('svg')(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")&attributes(attributes)-->
+                        <svg class="header__icon header__type header__type_arrow"><use xlink:href="assets/images/icon.svg#icon_arrow"></use></svg>
+                    </button>
+                    <button class="buttons__lead text">Оставить заявку</button>
+                </div>
+            </div>
+        </header>
+        <div class="main-section__content">
+            <div class="container">
+                <div class="main">
+                    <h1 class="main__title">Поможем
+                        <div class="inputbox main__select">
+                            <select class="select js-select">
+                                <option value="Опция 1">продать</option>
+                                <option value="Опция 2">купить</option>
+                                <!--+icon('arrow_big').icon.__type_arrow_big-->
+                            </select>
+                        </div>недвижимость бизнес- класса в Крыму</h1>
+                    <div class="main__subtitle">База эксклюзивной недвижимости</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section.main-section-->
+    <!--  +b.HEADER.header-->
+    <!--    div.container-->
+    <!--      +e.logo-->
+    <!--        //+e.IMG.logo-img-->
+    <!--        +e('a')(href='#').link-->
+    <!--          +icon('logo').icon.__type_logo-->
+    <!--          //+icon('star', true).icon.__type_star-->
+    <!---->
+    <!--      +e.tel.text-xl 8 800 550 94 22-->
+    <!--      +e.buttons-->
+    <!--        button().buttons__catalog.text Каталог-->
+    <!--          +icon('arrow').icon.__type_arrow-->
+    <!--        button().buttons__lead.text Оставить заявку-->
+    <!--  div.main-section__content-->
+    <!--    div.container-->
+    <!--      +b.main-->
+    <!--        +e.H1.title. Поможем продать недвижимость бизнес- класса в Крыму-->
+    <!--        +e.subtitle База эксклюзивной недвижимости-->
     <script src="assets/scripts/app.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
