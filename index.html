@@ -40,13 +40,18 @@
             <div class="container">
                 <div class="main">
                     <h1 class="main__title">Поможем
-                        <div class="inputbox main__select">
-                            <select class="select js-select">
-                                <option value="Опция 1">продать</option>
-                                <option value="Опция 2">купить</option>
-                                <!--+icon('arrow_big').icon.__type_arrow_big-->
-                            </select>
-                        </div>недвижимость бизнес- класса в Крыму</h1>
+                        <span class="main__select">
+                            <a class="button js-dropdown-toggle">продать
+                                <!--+e('svg')(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")&attributes(attributes)-->
+                                <svg class="button__icon button__type button__type_arrow_big"><use xlink:href="assets/images/icon.svg#icon_arrow_big"></use></svg>
+                            </a>
+                            <span class="js-dropdown dropdown">купить</span>
+                        </span>
+                        <!--+inputbox.main__select-->
+                        <!--  +select-->
+                        <!--    option(value="Опция 1") продать-->
+                        <!--    option(value="Опция 2") купить-->
+                        <!--    //+icon('arrow_big').icon.__type_arrow_big-->недвижимость бизнес- класса в Крыму</h1>
                     <div class="main__subtitle">База эксклюзивной недвижимости</div>
                 </div>
             </div>
