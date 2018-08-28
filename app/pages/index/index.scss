@@ -95,7 +95,7 @@ body {
   &__tel {
     @include text-xl;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       display: none;
     }
   }
@@ -104,7 +104,6 @@ body {
   }
 
   &__buttons {
-
   }
 
   &__type {
@@ -149,7 +148,7 @@ body {
 
     @include text;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       display: none;
     }
 
@@ -169,15 +168,16 @@ body {
     border: 2px solid $color-border;
     padding: 11px 15px 11px 19px;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       display: none;
     }
   }
 
   &__menu {
     display: none;
+    height: 30px;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       display: block;
     }
   }
@@ -194,15 +194,22 @@ body {
 
     margin-bottom: 42px;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       @include heading-5;
+    }
+
+    @include screen('md', max) {
+      @include text-xl;
+
+      font-size: 23px;
+      line-height: 31px;
     }
   }
 
   &__select {
     @include heading-1;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       @include heading-5;
     }
 
@@ -230,8 +237,16 @@ body {
     .button {
       @include heading-1;
 
-      @include screen('md', max) {
+      @include screen('lg', max) {
         @include heading-5;
+      }
+
+      @include screen('md', max) {
+        @include text-xl;
+
+        font-size: 23px;
+        line-height: 31px;
+        padding: 0 7px;
       }
 
       //margin-top: -14px;
@@ -242,6 +257,8 @@ body {
       align-items: center;
 
       &.is-active {
+        border: 1px solid $color-main;
+        //border: none;
 
         .button__type_arrow_big {
           //display: none;
@@ -259,8 +276,14 @@ body {
           margin-left: 20px;
           transition: all .3s ease;
 
-          @include screen('md', max) {
+          @include screen('lg', max) {
             margin-left: 7px;
+          }
+
+          @include screen('md', max) {
+            width: 11px;
+            height: 4px;
+            margin-left: 4px;
           }
         }
       }
@@ -269,6 +292,18 @@ body {
     .dropdown {
       @include heading-1;
 
+      @include screen('lg', max) {
+        @include heading-5;
+      }
+
+      @include screen('md', max) {
+        @include text-xl;
+
+        font-size: 23px;
+        line-height: 31px;
+      }
+
+      box-shadow: none;
       width: 100%;
       box-sizing: border-box;
       background: $color-main;
@@ -305,7 +340,7 @@ body {
   width: 100%;
   //flex: 1;
 
-  @include screen('md', max) {
+  @include screen('lg', max) {
     //position: initial;
     //padding: 0 96px;
     width: 100%;
@@ -316,20 +351,28 @@ body {
 
   &__tel {
     display: none;
-//    margin-bottom: 68px;
 
     @include text-xl;
-    @include screen('md', max) {
+
+    @include screen('lg', max) {
       display: block;
+    }
+
+    @include screen('md', max) {
+      @include text;
     }
   }
 
   &__text {
     @include text;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       max-width: 367px;
       margin-bottom: 30px;
+    }
+
+    @include screen('md', max) {
+      @include text-small;
     }
 
     max-width: 196px;
@@ -348,7 +391,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       margin: 0;
     }
     //display: flex;
@@ -358,9 +401,9 @@ body {
   &__item {
     @include heading-1;
 
-    //@include screen('md', max) {
-    //
-    //}
+    @include screen('md', max) {
+      @include text-subtitle;
+    }
 
     display: inline-flex;
     align-items: center;
@@ -381,6 +424,10 @@ body {
       //display: block;
       visibility: visible;
     }
+
+    @include screen('md', max) {
+      width: 26px;
+    }
   }
 
   &__lead {
@@ -391,8 +438,14 @@ body {
 
     @include text;
 
-    @include screen('md', max) {
+    @include screen('lg', max) {
       display: block;
+    }
+
+    @include screen('md', max) {
+      @include text-md;
+
+      padding: 20px 58px;
     }
   }
 }

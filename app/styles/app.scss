@@ -19,8 +19,12 @@
   max-width: 100%;
   box-sizing: border-box;
 
-  @include screen('md', max) {
+  @include screen('lg', max) {
     padding: 0 96px;
+  }
+
+  @include screen('md', max) {
+    padding: 0 30px;
   }
 }
 
