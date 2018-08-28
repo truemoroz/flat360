@@ -19,40 +19,61 @@
         <header class="header">
             <div class="container">
                 <div class="header__logo">
-                    <!--+e.IMG.logo-img-->
                     <a class="header__link" href="#">
                         <!--+e('svg')(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")&attributes(attributes)-->
                         <svg class="header__icon header__type header__type_logo"><use xlink:href="assets/images/icon.svg#icon_logo"></use></svg>
                         <!--+icon('star', true).icon.__type_star-->
                     </a>
                 </div>
-                <div class="header__tel text-xl">8 800 550 94 22</div>
+                <div class="header__tel">8 800 550 94 22</div>
                 <div class="header__buttons">
-                    <button class="buttons__catalog text">Каталог
-                        <!--+e('svg')(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")&attributes(attributes)-->
-                        <svg class="header__icon header__type header__type_arrow"><use xlink:href="assets/images/icon.svg#icon_arrow"></use></svg>
+                    <button class="buttons__catalog js-catalog">Каталог
+                        <!--+icon('arrow').icon.__type_arrow-->
+                        <img class="header__type_arrow" src="./assets/images/arrow.png" />
                     </button>
-                    <button class="buttons__lead text">Оставить заявку</button>
+                    <button class="buttons__lead">Оставить заявку</button>
+                    <button class="buttons__menu js-catalog">
+                        <img src="./assets/images/menu.png" />
+                    </button>
                 </div>
             </div>
         </header>
         <div class="main-section__content">
             <div class="container">
-                <div class="main">
-                    <h1 class="main__title">Поможем
-                        <span class="main__select">
-                            <a class="button js-dropdown-toggle">продать
-                                <!--+e('svg')(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")&attributes(attributes)-->
-                                <svg class="button__icon button__type button__type_arrow_big"><use xlink:href="assets/images/icon.svg#icon_arrow_big"></use></svg>
-                            </a>
-                            <span class="js-dropdown dropdown">купить</span>
-                        </span>
-                        <!--+inputbox.main__select-->
-                        <!--  +select-->
-                        <!--    option(value="Опция 1") продать-->
-                        <!--    option(value="Опция 2") купить-->
-                        <!--    //+icon('arrow_big').icon.__type_arrow_big-->недвижимость бизнес- класса в Крыму</h1>
-                    <div class="main__subtitle">База эксклюзивной недвижимости</div>
+                <div class="container__slider">
+                    <div class="main-catalog">
+                        <div class="main-catalog__tel">8 800 550 94 22</div>
+                        <div class="main-catalog__text">Смотрите и подписывайтесь на обновления нашей эксклюзивной подборки недвижимости.</div>
+                        <div class="main-catalog__items">
+                            <div class="main-catalog__item">Vkontakte
+                                <img class="main-catalog__arrow" src="./assets/images/arrow_big.png" alt="" role="presentation" />
+                            </div>
+                            <div class="main-catalog__item">Facebook
+                                <img class="main-catalog__arrow" src="./assets/images/arrow_big.png" alt="" role="presentation" />
+                            </div>
+                            <div class="main-catalog__item">Instagramm
+                                <img class="main-catalog__arrow" src="./assets/images/arrow_big.png" alt="" role="presentation" />
+                            </div>
+                        </div>
+                        <div class="main-catalog__empty"></div>
+                        <button class="main-catalog__lead">Оставить заявку</button>
+                    </div>
+                    <div class="main">
+                        <h1 class="main__title">Поможем
+                            <span class="main__select">
+                                <a class="button js-dropdown-toggle">продать
+                                    <!--+icon('arrow_big').icon.__type_arrow_big-->
+                                    <img class="button__type_arrow_big" src="./assets/images/arrow_big.png" />
+                                </a>
+                                <span class="js-dropdown dropdown">купить</span>
+                            </span>
+                            <!--+inputbox.main__select-->
+                            <!--  +select-->
+                            <!--    option(value="Опция 1") продать-->
+                            <!--    option(value="Опция 2") купить-->
+                            <!--    //+icon('arrow_big').icon.__type_arrow_big-->недвижимость бизнес-класса в Крыму</h1>
+                        <div class="main__subtitle">База эксклюзивной недвижимости</div>
+                    </div>
                 </div>
             </div>
         </div>
