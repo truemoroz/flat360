@@ -30,7 +30,7 @@ $new-breakpoints: map_remove($breakpoints, $default-breakpoit-name);
 
     @each $key, $val in $new-breakpoints {
       @for $i from 1 through 15 {
-        @include screen($key) {
+        @include screen($key, max) {
           &_#{$key}_#{$i} {
             width: $i * $grid-col-width;
           }

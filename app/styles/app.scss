@@ -18,6 +18,10 @@
   margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
+
+  @include screen('md', max) {
+    padding: 0 96px;
+  }
 }
 
 .js-sr {
