@@ -15,12 +15,14 @@ import '../blocks/rating/rating';
 import '../blocks/accordion/accordion';
 import '../blocks/dropdown/dropdown';
 import '../blocks/put-block-into-slot/put-block-into-slot';
+import header from '../components/header/header';
 
 const $ = window.$;
 
 $(() => {
   svg4everybody();
   objectFitImages();
+  header();
   anchor();
   freezebuttons();
   selects();
