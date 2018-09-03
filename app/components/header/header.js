@@ -13,7 +13,7 @@ export default function header() {
     $('.popup-catalog').toggleClass('is-active');
     $(this).toggleClass('is-active');
     //freeze();
-    console.log($(window).scrollTop());
+    //console.log($(window).scrollTop());
 
     if ($(window).scrollTop() === 0) {
       video_bg = false;
